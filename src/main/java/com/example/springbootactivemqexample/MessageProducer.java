@@ -12,6 +12,6 @@ public class MessageProducer {
     public MessageProducer(JmsTemplate jmsTemplate) {this.jmsTemplate = jmsTemplate;}
 
     public void sendMessage(Message message) {
-        jmsTemplate.convertAndSend("Queue.example", message);
+        jmsTemplate.convertAndSend("New.message", message);
     }
 }
