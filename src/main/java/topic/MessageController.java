@@ -15,7 +15,7 @@ public class MessageController {
         this.messageProducer = messageProducer;
     }
 
-    @PostMapping("/publish-message")
+    @PostMapping("/publish-message-topic")
     public ResponseEntity<String> publishMessage(@RequestBody String messageText) {
         try {
             messageProducer.sendMessageToTopic(messageText);
