@@ -13,6 +13,6 @@ public class MessageProducer {
     }
 
     public void sendMessageToTopic(String message) {
-        jmsTemplate.convertAndSend("Topic.example", message);
+        jmsTemplate.convertAndSend("OneToMany.message", message);
     }
 }
